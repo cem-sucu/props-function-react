@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const Toto = (props) => {
     const btnResponseToto =
@@ -18,3 +18,4 @@ const Toto = (props) => {
 };
 
 export default Toto;
+ */

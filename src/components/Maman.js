@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import Toto from "./Toto";
 
 class Maman extends Component {
@@ -38,3 +38,4 @@ class Maman extends Component {
 }
 
 export default Maman;
+ */

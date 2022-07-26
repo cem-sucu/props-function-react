@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-<button>pp</button>;
+import CustomBtn from "./CustomBtn";
+
 class Game extends Component {
     state = {
         name: "Mario",
@@ -12,6 +13,19 @@ class Game extends Component {
 
         const classColor = this.state.winner ? "alert-success" : "alert-danger";
 
+        const success = {
+            backgroundColor: "green",
+            color: "black",
+        };
+        const danger = {
+            backgroundColor: "red",
+            borderRadius: "20px",
+        };
+        const oceanBlue = {
+            backgroundColor: "blue",
+            borderRadius: "30px",
+        };
+
         return (
             <div className="container">
                 <div className={`alert ${classColor}`} role="alert">
@@ -20,6 +34,9 @@ class Game extends Component {
                 <button onClick={this.changeStatus} className="btn btn-primary">
                     Changer
                 </button>
+                <CustomBtn btnStyle={success}>cliquer ici </CustomBtn>
+                <CustomBtn btnStyle={danger}>cliquer ici </CustomBtn>
+                <CustomBtn btnStyle={oceanBlue}>cliquer ici </CustomBtn>
             </div>
         );
     }

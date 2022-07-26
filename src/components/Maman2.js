@@ -18,7 +18,7 @@ class Maman2 extends Component {
             <div>
                 <h1>Maman</h1>
                 <button onClick={() => this.ordreMaman("Va ranger ta chambre")}>
-                    Order de la mère
+                    Ordre de la mère
                 </button>
 
                 <p>{this.state.messageMaman}</p>

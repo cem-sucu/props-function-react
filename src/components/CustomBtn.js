@@ -1,4 +1,4 @@
-const CustomBtn = ({ btnStyle, children }) => {
+const CustomBtn = ({ btnStyle, children, handleClick }) => {
     const customBtn = {
         backgroundColor: "grey",
         border: "none",
@@ -12,7 +12,11 @@ const CustomBtn = ({ btnStyle, children }) => {
         margin: "5px auto",
     };
 
-    return <button style={{ ...customBtn, ...btnStyle }}>{children}</button>;
+    return (
+        <button onClick={handleClick} style={{ ...customBtn, ...btnStyle }}>
+            {children}
+        </button>
+    );
 };
 
 export default CustomBtn;

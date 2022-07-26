@@ -31,12 +31,10 @@ class Game extends Component {
                 <div className={`alert ${classColor}`} role="alert">
                     {result}
                 </div>
-                <button onClick={this.changeStatus} className="btn btn-primary">
-                    Changer
-                </button>
-                <CustomBtn btnStyle={success}>cliquer ici </CustomBtn>
-                <CustomBtn btnStyle={danger}>cliquer ici </CustomBtn>
-                <CustomBtn btnStyle={oceanBlue}>cliquer ici </CustomBtn>
+
+                <CustomBtn handleClick={this.changeStatus} btnStyle={success}>
+                    cliquer ici{" "}
+                </CustomBtn>
             </div>
         );
     }

@@ -6,10 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <StrictMode>
-        <App />
-    </StrictMode>
-);
+root.render(<App />);
 
 reportWebVitals();

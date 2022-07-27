@@ -1,7 +1,11 @@
-import "./App.css";
 import CustomBtn from "./components/CustomBtn";
 // import Maman from "./components/Maman";
 import Game from "./components/Game";
+
+/* import { Navbar } from "react-bootstrap";
+import Buttons from "./components/Buttons";
+import Template from "./components/Template";
+import Welcome from "./components/Welcome"; */
 
 function App() {
     const sayHello = () => {
@@ -9,8 +13,9 @@ function App() {
     };
     console.log(sayHello);
     return (
-        <div className="App">
+        <>
             {/* <Maman /> */}
+             
             <Game />
             <CustomBtn
                 handleClick={sayHello}
@@ -18,7 +23,8 @@ function App() {
             >
                 dite hello ^^
             </CustomBtn>
-        </div>
+
+        </>
     );
 }
 

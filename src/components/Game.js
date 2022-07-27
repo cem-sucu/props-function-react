@@ -17,14 +17,6 @@ class Game extends Component {
             backgroundColor: "green",
             color: "black",
         };
-        const danger = {
-            backgroundColor: "red",
-            borderRadius: "20px",
-        };
-        const oceanBlue = {
-            backgroundColor: "blue",
-            borderRadius: "30px",
-        };
 
         return (
             <div className="container">
